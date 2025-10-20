@@ -12,7 +12,7 @@ export const createHero = (
   // Function: `${packageId}::hero::create_hero`
   // Arguments: name (string), imageUrl (string), power (u64)
     tx.moveCall({
-      target: `${packageId}::arena::create_hero`,
+      target: `${packageId}::hero::create_hero`,
       arguments: [
         tx.pure.string(name),
         tx.pure.string(imageUrl),
